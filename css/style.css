@@ -1,0 +1,89 @@
+body, html {
+  font-family: 'Annie Use Your Telescope', cursive !important;
+  background-color: #F6FBFC !important;
+}
+
+/*Header*/
+
+div h1 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 60px;
+}
+
+/*Resizes main images*/
+
+img.thumbnail {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+div.text {
+  transition: .10s ease;
+  opacity: 1;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:30px;
+  width:100%;
+}
+div.text2 {
+  transition: .10s ease;
+  opacity: 1;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:30px;
+  width:100%;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover img.thumbnail {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.container:hover div.text {
+  opacity: 0;
+}
+.container:hover div.text2 {
+  opacity: 0;
+}
+
+/*Modal*/
+
+div.modal-dialog {
+  width: 100%;
+}
+div.modal-content {
+  background-color: #F6FBFC;
+}
+.modal-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  background-color: silver;
+}
